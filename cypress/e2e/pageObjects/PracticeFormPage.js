@@ -60,7 +60,7 @@ export class PracticeFormPage {
         cy.get('#dateOfBirthInput').click();
         cy.get('.react-datepicker__year-select').select(birthYear);
         cy.get('.react-datepicker__month-select').select(birthMonth);
-        cy.get('.react-datepicker__day').contains(birthDay).click();
+        cy.contains('.react-datepicker__day:not(.react-datepicker__day--outside-month)', birthDay).click();
     }
 
     static setSubject() {
