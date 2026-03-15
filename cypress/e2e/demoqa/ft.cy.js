@@ -1,5 +1,6 @@
 import {VisitBasePage} from "../pageObjects/VisitBasePage";
 import {PracticeFormPage} from "../pageObjects/PracticeFormPage";
+import {ValidateSubmittedForm} from "../pageObjects/ValidateSubmittedForm";
 
 describe('ft - Maksims A', () => {
     context('ft test scenario', () => {
@@ -11,6 +12,7 @@ describe('ft - Maksims A', () => {
             VisitBasePage.visit();
             PracticeFormPage.fillUpTheForm();
             PracticeFormPage.clickOnSubmitButton();
+            ValidateSubmittedForm.validateSubmittedForm();
         });
     });
 });
