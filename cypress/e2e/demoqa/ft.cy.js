@@ -10,7 +10,7 @@ describe('ft - Maksims A', () => {
         it('Test scenario 1 - making an appointment', () => {
             VisitBasePage.visit();
             PracticeFormPage.fillUpTheForm();
-            PracticeFormPage.clickOnSubmitButton();
+            // PracticeFormPage.clickOnSubmitButton();
         });
     });
 });

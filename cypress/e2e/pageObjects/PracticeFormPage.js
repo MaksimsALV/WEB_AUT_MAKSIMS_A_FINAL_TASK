@@ -6,7 +6,7 @@ export class PracticeFormPage {
         cy.get('#gender-radio-1').check();
         cy.get('#userNumber').type('3712912345');
         this.calendarWidgetSelection();
-        cy.get('#subjectsInput').type('Economics');
+        cy.get('#subjectsInput').type('Economics{enter}');
         cy.get('#hobbies-checkbox-3').check();
         cy.get('#currentAddress').type('Delhi street 123, korpuss-5, India');
     }
