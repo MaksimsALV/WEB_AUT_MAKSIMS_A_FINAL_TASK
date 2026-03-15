@@ -15,6 +15,7 @@ export class ValidateSubmittedForm {
         this.validateStateAndCity(studentDto);
     }
 
+    //helper functions
     static validateSuccessfulSubmit() {
         cy.get('#example-modal-sizes-title-lg').should('be.visible').and('have.text', 'Thanks for submitting the form');
     }
