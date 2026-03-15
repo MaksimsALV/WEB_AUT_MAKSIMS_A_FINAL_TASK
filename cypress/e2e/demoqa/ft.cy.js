@@ -7,7 +7,7 @@ describe('ft - Maksims A', () => {
             cy.task('log', 'test result state: ' + this.currentTest.state)
         });
 
-        it('Test scenario 1 - making an appointment', () => {
+        it('Final Test scenario', () => {
             VisitBasePage.visit();
             PracticeFormPage.fillUpTheForm();
             PracticeFormPage.clickOnSubmitButton();

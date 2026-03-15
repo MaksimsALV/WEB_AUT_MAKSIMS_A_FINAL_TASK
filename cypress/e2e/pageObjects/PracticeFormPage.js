@@ -8,6 +8,7 @@ export class PracticeFormPage {
         this.setDate();
         this.setSubject();
         this.setHobby();
+        this.addPicture();
         this.setCurrentAddress();
         this.setState();
         this.setCity();
@@ -29,6 +30,7 @@ export class PracticeFormPage {
     static setPhone() {
         cy.get('#userNumber').type('3712912345');
     }
+
     static setGender() {
         cy.get('#gender-radio-1').check();
     }
@@ -46,6 +48,10 @@ export class PracticeFormPage {
 
     static setHobby() {
         cy.get('#hobbies-checkbox-3').check();
+    }
+
+    static addPicture() {
+        cy.get('#uploadPicture').selectFile('cypress/e2e/resource/via_lv_logo.webp');
     }
 
     static setCurrentAddress() {
